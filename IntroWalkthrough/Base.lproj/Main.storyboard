@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paralax3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HjN-er-QQm">
-                                        <rect key="frame" x="0.0" y="0.0" width="1944" height="568"/>
+                                        <rect key="frame" x="-100" y="0.0" width="1944" height="568"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSY-yw-D8r" userLabel="p1">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -332,7 +332,7 @@
                                     <constraint firstItem="usX-Rp-mH0" firstAttribute="width" secondItem="Zky-DL-tTP" secondAttribute="width" id="2rM-lz-Ilf"/>
                                     <constraint firstItem="usX-Rp-mH0" firstAttribute="top" secondItem="Zky-DL-tTP" secondAttribute="top" id="4Bk-nP-K5a"/>
                                     <constraint firstItem="HjN-er-QQm" firstAttribute="height" secondItem="Zky-DL-tTP" secondAttribute="height" id="8Yr-0f-JHq"/>
-                                    <constraint firstItem="HjN-er-QQm" firstAttribute="leading" secondItem="Zky-DL-tTP" secondAttribute="leading" id="9oN-zX-3Ul"/>
+                                    <constraint firstItem="HjN-er-QQm" firstAttribute="leading" secondItem="Zky-DL-tTP" secondAttribute="leading" constant="-100" id="9oN-zX-3Ul"/>
                                     <constraint firstItem="86s-Fm-fXh" firstAttribute="height" secondItem="Zky-DL-tTP" secondAttribute="height" id="D6W-Ir-ERK"/>
                                     <constraint firstItem="86s-Fm-fXh" firstAttribute="top" secondItem="Zky-DL-tTP" secondAttribute="top" id="D9p-sh-kSD"/>
                                     <constraint firstItem="HjN-er-QQm" firstAttribute="top" secondItem="Zky-DL-tTP" secondAttribute="top" id="Jqx-tQ-Fba"/>

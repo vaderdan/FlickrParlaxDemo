@@ -46,6 +46,8 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         configurePage1()
         configurePage2()
         configurePage3()
+        
+        configureAnimation()
     }
     
     
@@ -86,6 +88,19 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         let paralax = ParalaxHelper.init(animator: animator, views: views, paths: paths, offsets: offsets, width: view.frame.size.width, margin: view.frame.size.width*2)
         
         paralax.configure()
+    }
+    
+    func configureAnimation(){
+        configureDazzleView(paralaxBackgroundView, width: view.frame.size.width*3, traslation: -view.frame.size.width/1.4, toTranslation: view.frame.size.width/1.4)
+        
+    }
+    
+    private func configureDazzleView(view:UIView, width:CGFloat, traslation:CGFloat, toTranslation:CGFloat){
+        let translationAnimation = TranslationAnimation.init(view: view)
+        translationAnimation.addKeyframe(-width, value: CGPoint(x:traslation, y:0))
+        translationAnimation.addKeyframe(+width, value: CGPoint(x:toTranslation, y:0))
+        
+        animator.addAnimation(translationAnimation)
     }
     
     //MARK path helper functions
