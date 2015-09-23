@@ -30,7 +30,7 @@ public class LayerPathsTranslationAnimation : Animation<CGFloat>, Animatable {
 
         
         let radius = ceil(layer.frame.size.width);
-        let rect = CGRectMake(-radius, -radius, radius*2, radius*2);
+        let rect = CGRectMake(-radius, -radius/4, radius*2, radius*2.5);
         
         
         

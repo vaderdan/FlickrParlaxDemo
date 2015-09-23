@@ -65,7 +65,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func configurePage2(){
-        let paths:[CGPath] = [circlePathForSize(camera1View.frame.size), circlePathForSize(camera2View.frame.size), circlePathForSize(camera3View.frame.size)]
+        let paths:[CGPath] = [circlePathForSize(camera1View.frame.size), CGPathCreateMutable(), CGPathCreateMutable()]
         
         
         let views:[UIView] = [camera1View, camera2View, camera3View]
@@ -136,7 +136,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         
         let targetOffset = resolveTargetContentOffset(scrollView, velocity: velocity, targetContentOffset: &targetContentOffset.memory)
-        
         
         targetContentOffset.memory = targetOffset
     }

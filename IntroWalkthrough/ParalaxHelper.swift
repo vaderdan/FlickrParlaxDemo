@@ -163,7 +163,7 @@ public class ParalaxHelper {
     }
     
     private func configureDazzleLayer(layer:CALayer, width:CGFloat, traslation:CGFloat, toTranslation:CGFloat, paths:[CGPath], offsets:[CGFloat]){
-        
+
         let translationAnimation = LayerPathsTranslationAnimation.init(layer: layer, paths: paths, offsets: offsets)
         translationAnimation.addKeyframe(margin-width, value: traslation)
         translationAnimation.addKeyframe(margin+width, value: toTranslation)
