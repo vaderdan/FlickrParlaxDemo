@@ -144,6 +144,7 @@ public class ParalaxHelper {
     private func resizePath(path:CGPath, size:CGSize, padding:CGFloat) -> CGPath
     {
         var translation = CGAffineTransformMakeScale((size.width+padding)/size.width, (size.height+padding)/size.height)
+        translation = CGAffineTransformTranslate(translation, -padding/2, -padding/2)
         
         if let outputPath = CGPathCreateCopyByTransformingPath(path, &translation) {
             return outputPath
