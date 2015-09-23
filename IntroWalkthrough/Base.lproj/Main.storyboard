@@ -1,25 +1,306 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IntroWalkthrough" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1500" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zky-DL-tTP">
+                                <rect key="frame" x="0.0" y="0.0" width="1500" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paralax3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HjN-er-QQm">
+                                        <rect key="frame" x="0.0" y="0.0" width="1944" height="568"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="568" id="e8O-rR-xco"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSY-yw-D8r" userLabel="p1">
+                                        <rect key="frame" x="20" y="30" width="280" height="410"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vTY-a4-US6" userLabel="box6">
+                                                <rect key="frame" x="189" y="120" width="10" height="10"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DnC-54-LcT" userLabel="box5">
+                                                <rect key="frame" x="67" y="148" width="25" height="25"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qTn-F7-Vfn" userLabel="box4">
+                                                <rect key="frame" x="220" y="150" width="33" height="33"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iwc-7R-x0X" userLabel="box3">
+                                                <rect key="frame" x="188" y="242" width="50" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nh4-dY-2AK" userLabel="box2">
+                                                <rect key="frame" x="27" y="147" width="50" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="25"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rz0-Me-0t1" userLabel="box1">
+                                                <rect key="frame" x="46" y="240" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uwS-uG-LLD" userLabel="Person">
+                                                <rect key="frame" x="80" y="165" width="125" height="125"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.png" translatesAutoresizingMaskIntoConstraints="NO" id="UdK-7K-7zE">
+                                                        <rect key="frame" x="20" y="30" width="90" height="90"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="62"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="cnr-LS-SZg"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="86s-Fm-fXh" userLabel="p2">
+                                        <rect key="frame" x="340" y="30" width="280" height="410"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wrr-GB-As8" userLabel="camera3">
+                                                <rect key="frame" x="140" y="180" width="101" height="137"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zrc-XA-2Tq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="101" height="137"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uqP-Y1-WdM" userLabel="camera2">
+                                                <rect key="frame" x="27" y="180" width="105" height="140"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera2.png" translatesAutoresizingMaskIntoConstraints="NO" id="cW1-iy-3Ro">
+                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="140"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGM-kR-Kpf" userLabel="camera1">
+                                                <rect key="frame" x="46" y="160" width="172" height="172"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="camera1.png" translatesAutoresizingMaskIntoConstraints="NO" id="fIf-vk-YRv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="172"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="fIf-vk-YRv" secondAttribute="bottom" id="GrY-dd-7Kh"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fIf-vk-YRv" secondAttribute="trailing" id="Hh1-KD-f6z"/>
+                                                    <constraint firstItem="fIf-vk-YRv" firstAttribute="leading" secondItem="FGM-kR-Kpf" secondAttribute="leading" id="aEr-mo-nXP"/>
+                                                    <constraint firstItem="fIf-vk-YRv" firstAttribute="top" secondItem="FGM-kR-Kpf" secondAttribute="top" id="xAa-OL-VoA"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="gsS-W4-8d3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="usX-Rp-mH0" userLabel="p3">
+                                        <rect key="frame" x="660" y="30" width="280" height="410"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yad-io-aqq" userLabel="card4">
+                                                <rect key="frame" x="70" y="162" width="143" height="112"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="piD-Vs-EwO" userLabel="card3">
+                                                <rect key="frame" x="62" y="168" width="156" height="122"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9hm-8F-yDG" userLabel="card2">
+                                                <rect key="frame" x="54" y="174" width="170" height="132"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1T-YK-wYs" userLabel="card1">
+                                                <rect key="frame" x="46" y="180" width="185" height="140"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bridge.png" translatesAutoresizingMaskIntoConstraints="NO" id="zlS-mv-OLd">
+                                                        <rect key="frame" x="0.0" y="6" width="185" height="140"/>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="xmU-zR-7MI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HjN-er-QQm" firstAttribute="leading" secondItem="Zky-DL-tTP" secondAttribute="leading" id="9oN-zX-3Ul"/>
+                                    <constraint firstAttribute="bottom" secondItem="aSY-yw-D8r" secondAttribute="bottom" constant="128" id="HwA-ic-VJL"/>
+                                    <constraint firstItem="HjN-er-QQm" firstAttribute="top" secondItem="Zky-DL-tTP" secondAttribute="top" id="Jqx-tQ-Fba"/>
+                                    <constraint firstItem="aSY-yw-D8r" firstAttribute="leading" secondItem="Zky-DL-tTP" secondAttribute="leading" constant="20" id="K7n-QQ-PLF"/>
+                                    <constraint firstItem="aSY-yw-D8r" firstAttribute="top" secondItem="Zky-DL-tTP" secondAttribute="top" constant="30" id="QGp-X3-LJ8"/>
+                                    <constraint firstAttribute="bottom" secondItem="HjN-er-QQm" secondAttribute="bottom" id="Tfe-au-ZnV"/>
+                                    <constraint firstAttribute="trailing" secondItem="HjN-er-QQm" secondAttribute="trailing" constant="-880" id="Wvs-wr-WoX"/>
+                                    <constraint firstItem="aSY-yw-D8r" firstAttribute="centerX" secondItem="Zky-DL-tTP" secondAttribute="centerX" id="uCa-dK-l8y"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zky-DL-tTP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7V5-tC-Cgd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Zky-DL-tTP" secondAttribute="bottom" id="UdG-H4-M12"/>
+                            <constraint firstAttribute="trailing" secondItem="Zky-DL-tTP" secondAttribute="trailing" id="uRI-G5-4sh"/>
+                            <constraint firstItem="Zky-DL-tTP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ziE-uS-kaw"/>
+                        </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1500" height="568"/>
+                    <connections>
+                        <outlet property="box1View" destination="Rz0-Me-0t1" id="KOK-fz-ePZ"/>
+                        <outlet property="box2View" destination="nh4-dY-2AK" id="uFe-GG-ngO"/>
+                        <outlet property="box3View" destination="Iwc-7R-x0X" id="pZk-1I-XWQ"/>
+                        <outlet property="box4View" destination="qTn-F7-Vfn" id="akJ-mE-bnF"/>
+                        <outlet property="box5View" destination="DnC-54-LcT" id="ffy-u4-OhN"/>
+                        <outlet property="box6View" destination="vTY-a4-US6" id="OAQ-wf-bDA"/>
+                        <outlet property="camera1View" destination="FGM-kR-Kpf" id="w9g-Z7-051"/>
+                        <outlet property="camera2View" destination="uqP-Y1-WdM" id="SUj-3d-Ns6"/>
+                        <outlet property="camera3View" destination="Wrr-GB-As8" id="x3v-31-ILg"/>
+                        <outlet property="card1View" destination="c1T-YK-wYs" id="rjo-W4-Jrz"/>
+                        <outlet property="card2View" destination="9hm-8F-yDG" id="1cU-EM-vXo"/>
+                        <outlet property="card3View" destination="piD-Vs-EwO" id="C0d-ui-zRB"/>
+                        <outlet property="card4View" destination="Yad-io-aqq" id="lfO-rn-zrc"/>
+                        <outlet property="paralaxBackgroundView" destination="HjN-er-QQm" id="sha-6t-rBe"/>
+                        <outlet property="personView" destination="uwS-uG-LLD" id="9aZ-rD-bR3"/>
+                        <outlet property="scrollView" destination="Zky-DL-tTP" id="fJz-Kf-V8u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="202" y="289"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bridge.png" width="177" height="119"/>
+        <image name="camera1.png" width="174" height="171"/>
+        <image name="camera2.png" width="105" height="140"/>
+        <image name="camera3.png" width="101" height="137"/>
+        <image name="paralax3.jpg" width="1944" height="1093"/>
+        <image name="person.png" width="117" height="125"/>
+    </resources>
 </document>
