@@ -1,6 +1,8 @@
 # FlickrParlaxDemo 
 Code for Flickr's intro paralax walkthrough article
 
+![](./animation.gif)
+
 # How to Install or update the cocoa pods dependencies
 
 In terminal naviate to the project's directory and then type:

@@ -12,7 +12,7 @@ import UIKit
 extension CALayer {
     var borderUIColor: UIColor {
         get {
-            return UIColor.init(CGColor: (self.borderColor ?? UIColor.whiteColor().CGColor))
+            return UIColor.init(CGColor: self.borderColor!)
         }
         set(color) {
             self.borderColor = color.CGColor

@@ -55,15 +55,15 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     
     
     func configurePage1(){
-        let paths:[CGPath] = [circlePathForSize(personView.frame.size), circlePathForSize(box1View.frame.size), circlePathForSize(box2View.frame.size), circlePathForSize(box3View.frame.size), circlePathForSize(box4View.frame.size), circlePathForSize(box5View.frame.size), circlePathForSize(box6View.frame.size)]
-        
-        
-        let views:[UIView] = [personView, box1View, box2View, box3View, box4View, box5View, box6View]
-        let offsets:[CGFloat] = [1100, 400, 550, 300, 400, 500, 20]
-        
-        let paralax = ParalaxHelper.init(animator: animator, views: views, paths: paths, offsets: offsets, width: view.frame.size.width, margin: 0)
-        
-        paralax.configure()
+let paths:[CGPath] = [circlePathForSize(personView.frame.size), circlePathForSize(box1View.frame.size), circlePathForSize(box2View.frame.size), circlePathForSize(box3View.frame.size), circlePathForSize(box4View.frame.size), circlePathForSize(box5View.frame.size), circlePathForSize(box6View.frame.size)]
+
+
+let views:[UIView] = [personView, box1View, box2View, box3View, box4View, box5View, box6View]
+let offsets:[CGFloat] = [1100, 400, 550, 300, 400, 500, 20]
+
+let paralax = ParalaxHelper.init(animator: animator, views: views, paths: paths, offsets: offsets, width: view.frame.size.width, margin: 0)
+
+paralax.configure()
     }
     
     func configurePage2(){
